@@ -1,16 +1,8 @@
 # weather_app
 
-A new Flutter project.
+a simple weather app using openweather 2.5 weather api
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+to use the code you first need to:
+-crete a file names .env inside: lib/services/
+-create an openweather account if you don't have one alreade in order to get you own api key
+-write this inside the .env and add your api key.    OPENWEATHER_API_KEY='   '
