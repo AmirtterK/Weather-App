@@ -1,4 +1,4 @@
-# weather_app: Cloud Flow
+# weather app: Cloud Flow
 
 a simple weather app using openweather 2.5 weather api
 
