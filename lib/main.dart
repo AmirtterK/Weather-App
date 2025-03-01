@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:weather_app/pages/Weather_page.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -8,6 +9,10 @@ bool isNight = false;
 Future<void> main() async {
   await dotenv.load(fileName: 'lib/services/.env');
   isNight = (DateTime.now().hour >= 21 || DateTime.now().hour < 5);
+  LocationPermission permission = await Geolocator.checkPermission();
+  if (permission == LocationPermission.denied) {
+    permission = await Geolocator.requestPermission();
+  }
   runApp(const MyApp());
 }
 
