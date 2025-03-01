@@ -6,4 +6,4 @@ to use the code you first need to:
 -crete a file names .env inside: lib/services/  
 -create an openweather account if you don't have one alreade in order to get you own api key  
 -write this inside the .env and add your api key.  
-OPENWEATHER_API_KEY='   '
+-OPENWEATHER_API_KEY='   '
