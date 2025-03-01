@@ -10,7 +10,8 @@ Future<void> main() async {
   await dotenv.load(fileName: 'lib/services/.env');
   isNight = (DateTime.now().hour >= 21 || DateTime.now().hour < 5);
   LocationPermission permission = await Geolocator.checkPermission();
-  if (permission == LocationPermission.denied) {
+  if (permission == LocationPermission.denied ||
+      permission == LocationPermission.deniedForever) {
     permission = await Geolocator.requestPermission();
   }
   runApp(const MyApp());
