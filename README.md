@@ -8,4 +8,4 @@ to use the code you first need to:
 -write this inside the .env and add your api key.  
 -OPENWEATHER_API_KEY='   '
 
-Download on android [here](https://drive.google.com/file/d/1Bpuuj72OlEkIeL0K7-56cmcuUmcz-cKW/view?usp=drive_link)
+Download on android [here](https://drive.google.com/file/d/1qFLu-dYNvt1SELM8yHboxXTG1NI0qkXV/view?usp=drive_link)
