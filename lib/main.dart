@@ -7,6 +7,12 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 bool isNight = false;
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  SystemChrome.setEnabledSystemUIMode(
+    SystemUiMode.manual,
+    overlays: [SystemUiOverlay.top],
+  );
   await dotenv.load(fileName: 'lib/services/.env');
   isNight = (DateTime.now().hour >= 21 || DateTime.now().hour < 5);
   LocationPermission permission = await Geolocator.checkPermission();
